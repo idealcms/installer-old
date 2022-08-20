@@ -1,0 +1,19 @@
+{
+  "name": "idealcms/installer-old",
+  "type": "project",
+  "license": "LGPL-3.0",
+  "require": {
+    "php": "^7.4",
+    "ideals/idealcms-old": "dev-master"
+  },
+ "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/ideals/idealcms-old"
+    }
+  ],
+  "scripts": {
+    "post-update-cmd": "Ideal\\Setup\\Composer::postUpdate",
+    "post-create-project-cmd": "Ideal\\Setup\\Composer::postCreateProject"
+  }
+}
